@@ -1,0 +1,49 @@
+class Student:
+
+    def __init__(self, name, age, marks):
+        self.name = name
+        self.age = age
+        self.marks = marks
+        print(f"--- Student profile created for {self.name} ---")
+
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Marks:", self.marks)
+
+    def study(self):
+        print(self.name, "is studying.")
+
+    def calculate(self):
+        if self.marks >= 40:
+            return "Passed"
+        else:
+            return "Failed"
+
+    def __del__(self):
+        print(f"--- Student profile for {self.name} has been deleted from memory ---")
+
+
+student1 = Student("Rahul", 20, 85)
+student2 = Student("Priya", 21, 35)
+
+print()
+
+student1.display()
+student1.study()
+print("Result:", student1.calculate())
+
+print()
+
+
+student2.display()
+student2.study()
+print("Result:", student2.calculate())
+
+print()
+
+
+# print("Manually deleting student1 now:")
+# del student1
+
+# print("\nEnd of program execution. Watch student2 delete automatically below:")
