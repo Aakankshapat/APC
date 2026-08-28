@@ -1,0 +1,12 @@
+import nltk
+from nltk.tokenize import sent_tokenize
+
+nltk.download('punkt')
+nltk.download('punkt_tab')
+
+text = "NLP is interesting. It is used in many applications."
+
+sentences = sent_tokenize(text)
+
+print("Sentence Tokens:")
+print(sentences)
