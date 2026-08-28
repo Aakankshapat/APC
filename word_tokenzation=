@@ -1,0 +1,8 @@
+from nltk.tokenize import wordpunct_tokenize
+
+text = "Natural Language Processing is very interesting."
+
+words = wordpunct_tokenize(text)
+
+print("Word Tokens:")
+print(words)
